@@ -1,7 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var autoprefixer = require('autoprefixer');
+var autoprefixer = require('autoprefixer')
 
 //move configs elsewhere once we have more
 const config = {
@@ -9,7 +9,7 @@ const config = {
   path_base  : path.resolve(__dirname, '..'),
   dir_app    : 'app',
   dir_dist   : 'static/dist',
-  dir_test   : 'tests',
+  dir_test   : 'tests'
 }
 
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(config.path_base, config.dir_dist),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
