@@ -39,6 +39,13 @@ module.exports = function (config) {
           }
         ]
       },
+      resolve: {
+        modulesDirectories: [
+          'app',
+          'node_modules'
+        ],
+        extensions: ['', '.json', '.js']
+      },
       plugins: [
         new webpack.IgnorePlugin(/\.json$/),
         new webpack.NoErrorsPlugin()
