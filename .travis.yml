@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - "5"
 
-sudo: false
+# sudo: false
+sudo: required
 
 # Add cache settings
 # cache:
