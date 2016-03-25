@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 require('bootstrap/dist/css/bootstrap.css');
 import { Grid, Col, Row, Input, Button  } from 'react-bootstrap'
-import styles from './LoginForm.scss'
+import styles from './loginForm.scss'
 
 // a Login Form component
 class LoginForm extends Component {
