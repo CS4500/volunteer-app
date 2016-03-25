@@ -4,7 +4,7 @@ import App from 'views/App'
 import ProfileView from 'views/profile/ProfileView'
 import HomeView from 'views/home/HomeView'
 import SearchView from 'views/search/SearchView'
-import LoginView from 'views/login/LoginView'
+import LoginView from 'views/login/loginView'
 
 
 const routes = (
