@@ -1,0 +1,18 @@
+
+#inner {
+    width: 2000px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#box1 {
+    height: 100%;
+    width: 1000px;
+    float: left;
+}
+
+#box2 {
+    height: 100%;
+    width: 1000px;
+    float: left;
+}
