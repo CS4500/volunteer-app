@@ -1,5 +1,4 @@
-import fetch from 'isomorphic-fetch'
-import { CALL_API, GET, POST } from '../middleware/api'
+import {CALL_API, GET, POST} from "../middleware/api";
 
 //action types
 export const FETCH_EVENTS_REQUEST = 'FETCH_EVENTS_REQUEST'
