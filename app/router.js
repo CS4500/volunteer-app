@@ -6,6 +6,8 @@ import HomeView from 'views/home/HomeView'
 import SearchView from 'views/search/SearchView'
 import LoginView from 'views/login/loginView'
 import RegisterView from 'views/register/RegisterView'
+import ExternalOrganizationView from 'views/organization/External_Profile_View'
+import InternalOrganizationView from 'views/organization/Internal_Profile_View'
 
 const routes = (
     <Route path="/" component={App}>
@@ -14,6 +16,8 @@ const routes = (
         <Route path="search" component={SearchView}/>
         <Route path="login" component={LoginView}/>
         <Route path="register" component={RegisterView}/>
+        <Route path="externalOrg" component={ExternalOrganizationView}/>
+        <Route path="internalOrg" component={InternalOrganizationView}/>
     </Route>
 )
 
