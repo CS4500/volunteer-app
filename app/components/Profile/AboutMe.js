@@ -1,7 +1,8 @@
 ﻿import React, { Component } from 'react';
-import {Col, Button, Popover, ButtonToolbar, OverlayTrigger, Overlay} from 'react-bootstrap';
+import {Button, Popover, ButtonToolbar, OverlayTrigger} from 'react-bootstrap';
 import List from './List.js';
 import EditingPopup from './EditingPopup.js';
+require('bootstrap/dist/css/bootstrap.css');
 
 const skills = [
        "Math",

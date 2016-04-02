@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
 import {Carousel, CarouselItem} from 'react-bootstrap';
-require('bootstrap/dist/css/bootstrap.css');
 
 class carousel extends Component {
     render() {

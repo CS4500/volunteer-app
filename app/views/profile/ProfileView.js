@@ -3,8 +3,8 @@ import './divBox.css'
 import {Link} from 'react-router';
 import EventHistory from '../../components/EventDashboard/EventHistory'
 import UpcomingEvents from '../../components/EventDashboard/UpcomingEvents'
-import AboutMe from '../../components/AboutMe/AboutMe';
-import ProfileChart from '../../components/ProfileChart/ProfileChart';
+import AboutMe from '../../components/Profile/AboutMe';
+import ProfileChart from '../../components/Profile/ProfileChart';
 import FeaturedEvents from '../../containers/FeaturedEventsContainer';
 
 class ProfileView extends Component {
