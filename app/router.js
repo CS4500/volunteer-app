@@ -45,12 +45,9 @@ const routes = (
         <Route path="search" component={SearchView}/>
         <Route path="login" component={LoginView}/>
         <Route path="register" component={RegisterView}/>
-<<<<<<< HEAD
         <Route path="externalOrg" component={ExternalOrganizationView}/>
         <Route path="internalOrg" component={InternalOrganizationView}/>
-=======
         <Route path="approval" component={ApprovalView}/>
->>>>>>> upstream/master
     </Route>
 )
 
