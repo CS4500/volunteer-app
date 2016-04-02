@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-fetch'
 import { CALL_API, GET, POST } from '../middleware/api'
 
 //action types

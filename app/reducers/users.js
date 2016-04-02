@@ -4,10 +4,7 @@ import { FETCH_USERS_REQUEST,
          FETCH_USERS_FAILURE,
          FETCH_USER_REQUEST,
          FETCH_USER_SUCCESS,
-         FETCH_USER_FAILURE,
-         SAVE_USER_REQUEST,
-         SAVE_USER_SUCCESS,
-         SAVE_USER_FAILURE
+         FETCH_USER_FAILURE
        } from '../actions/users'
 
 // this is a template, currently returns same state for for each action, will have
@@ -32,12 +29,6 @@ export default (state = emptyState, action) => {
     case FETCH_USER_SUCCESS:
       return merge({}, state, {isReq: false})
     case FETCH_USER_FAILURE:
-      return merge({}, state, {isReq: false})
-    case SAVE_USER_REQUEST:
-      return merge({}, state, {isReq: true})
-    case SAVE_USER_SUCCESS:
-      return merge({}, state, {isReq: false, currentUser: action.response})
-    case SAVE_USER_FAILURE:
       return merge({}, state, {isReq: false})
     default:
       return state

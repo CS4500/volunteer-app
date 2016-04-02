@@ -1,0 +1,51 @@
+[
+    {
+      "id": 100,
+      "role": "user",
+      "name": "Alexander Hamilton",
+      "password": "pass",
+      "email": "user@mail.com",
+      "bio": "This is not my bio",
+      "skills": [
+        "teaching",
+        "sports"
+      ],
+      "age": 24,
+      "gender": "male",
+      "neighborhood": "North End",
+      "email_from_orgs": true,
+      "photo": "http://i.imgur.com/TLhxnYl.jpg",
+      "phone": 5557779999,
+      "education": "college"
+    },
+    {
+      "id": 10,
+      "role": "org",
+      "name": "Margaret",
+      "password": "pass",
+      "email": "org@gmail.com",
+      "bio": "This is not my bio",
+      "age": 26,
+      "gender": "female",
+      "neighborhood": "South End",
+      "email_from_orgs": true,
+      "photo": "http://i.imgur.com/TLhxnYl.jpg",
+      "phone": 5557779999,
+      "education": "college"
+    },
+    {
+      "id": 42,
+      "role": "admin",
+      "name": "Susan",
+      "password": "pass",
+      "email": "admin@mail.com",
+      "bio": "This is not my bio",
+      "age": 30,
+      "gender": "female",
+      "neighborhood": "Back Bay",
+      "email_from_orgs": true,
+      "photo": "http://i.imgur.com/TLhxnYl.jpg",
+      "phone": 5557779999,
+      "education": "college"
+    }
+  ]

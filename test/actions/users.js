@@ -50,32 +50,4 @@ describe('Users Actions', () => {
       expect(apiObj.endpoint).to.equal('users/1').that.is.a('string')
     })
   })
-
-  describe('saveUser(data)', () => {
-
-    let result
-    let apiObj
-    let data = {id: 1, name: "John"}
-
-    before(() => {
-      result = actions.saveUser(data)
-      apiObj = result[CALL_API]
-    })
-
-    it('creates an CALL_API action', () => {
-      expect(result).to.have.property(CALL_API)
-    })
-
-    it('creates action with HTTP POST Method', () => {
-      expect(apiObj.method).to.equal(POST)
-    })
-
-    it('creates action with endpoint "/users"', () => {
-      expect(apiObj.endpoint).to.equal('users').that.is.a('string')
-    })
-
-    it('creates action with given data', () => {
-      expect(apiObj.data).to.deep.equal(data)
-    })
-  })
 })

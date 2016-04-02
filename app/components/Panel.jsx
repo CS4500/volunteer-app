@@ -27,17 +27,15 @@
    }
 
  });
-  // <div class="col-sm-3 col-xs-12" id="righttoc"></div>  
+
 
   var EventPanel = React.createClass({
     render: function(){ 
 
       return (
-        //<div className="col-sm-2 col-xs-12" id="lefttoc"></div>
-        // <div className="col-sm-7 col-xs-12" id="maptoc">
-        // <div className="row">
-        // <div className="col-lg-10 col-md-11 col-sm-2 col-xs-12">
+
        <div>
+
         <div className="panel panel-primary">
 
         <div className="panel-heading">

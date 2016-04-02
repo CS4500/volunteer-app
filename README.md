@@ -98,6 +98,10 @@ Run a development build/bundle. Assets are outputed to `/static/dist/`
 ```shell
 $ npm run build
 ```
+### Mocked API
+
+This application runs a mocked backend which serves JSON to the front-end. Authentication is also mocked and when testing the application in development you can log in with the following accounts; user@mail.com as a user role, org@gmail.com as an organization role, admin@mail.com as a admin role. All have the password 'pass'.
+
 ### Tools
 
 Uses [Webpack's "Hot Module Replacement"](https://webpack.github.io/docs/hot-module-replacement.html) to inject changes into the active runtime.

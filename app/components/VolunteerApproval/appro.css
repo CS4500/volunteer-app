@@ -1,0 +1,23 @@
+#top {
+	height: 100%;
+	width:  60%;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+#eventinfo {
+	height: 100%;
+	width: 60%;
+	float: left;
+}
+
+#hourinfo{
+	height: 100%;
+	width: 40%; 
+	float: right;
+}
+#carousel{ 
+	width: 100%;
+
+
+	 }

@@ -11,12 +11,21 @@ export const POST = 'POST'
 const jsonHttpHeader = {'Accept': 'application/json', 'Content-Type': 'application/json'}
 
 // Fetches an API response
-function callApi(endpoint, method, data) {
+function callApi(endpoint, method, data, token) {
   const fullUrl = API_ROOT + endpoint
+
+  let authHeader = {}
+
+  if (token) {
+    authHeader = { 'Authorization': `Bearer ${token}` }
+  }
 
   switch (method) {
     case GET:
-      return fetch(fullUrl)
+      return fetch(fullUrl, {
+          method: 'get',
+          headers: authHeader
+        })
         .then(response =>
           response.json().then(json => ({ json, response }))
         ).then(({ json, response }) => {
@@ -29,7 +38,7 @@ function callApi(endpoint, method, data) {
     case POST:
       return fetch(fullUrl, {
           method: 'post',
-          headers: jsonHttpHeader,
+          headers: Object.assign({}, jsonHttpHeader, authHeader),
           body: JSON.stringify(data)
         })
         .then(response =>
@@ -97,7 +106,9 @@ export default store => next => action => {
   const [ requestType, successType, failureType ] = types
   next(actionWith({ type: requestType }))
 
-  return callApi(endpoint, method, data).then(
+  const token = store.getState().auth.token;
+
+  return callApi(endpoint, method, data, token).then(
     response => next(actionWith({
       response,
       type: successType

@@ -26,7 +26,5 @@ describe('Users Reducer', () => {
     expect(req_act_1).to.have.property('isReq').to.be.true
     let req_act_2 = reducer(userstate, {type: actions.FETCH_USER_REQUEST})
     expect(req_act_2).to.have.property('isReq').to.be.true
-    let req_act_3 = reducer(userstate, {type: actions.SAVE_USER_REQUEST})
-    expect(req_act_3).to.have.property('isReq').to.be.true
   })
 })
