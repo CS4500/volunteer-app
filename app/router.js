@@ -7,6 +7,10 @@ import HomeView from 'views/home/HomeView'
 import SearchView from 'views/search/SearchView'
 import LoginView from 'views/login/loginView'
 import RegisterView from 'views/register/RegisterView'
+<<<<<<< HEAD
+import ExternalOrganizationView from 'views/organization/External_Profile_View'
+import InternalOrganizationView from 'views/organization/Internal_Profile_View'
+=======
 import ApprovalView from 'views/approval/ApprovalView'
 
 // Authentication Wrappers
@@ -32,6 +36,7 @@ const isAuthAdmin = UserAuthWrapper({
   wrapperDisplayName: 'IsAuthAdmin',
   predicate: auth => auth.isAuthenticated & auth.role === 'admin'
 })
+>>>>>>> upstream/master
 
 const routes = (
     <Route path="/" component={App}>
@@ -40,6 +45,8 @@ const routes = (
         <Route path="search" component={SearchView}/>
         <Route path="login" component={LoginView}/>
         <Route path="register" component={RegisterView}/>
+        <Route path="externalOrg" component={ExternalOrganizationView}/>
+        <Route path="internalOrg" component={InternalOrganizationView}/>
         <Route path="approval" component={ApprovalView}/>
     </Route>
 )
