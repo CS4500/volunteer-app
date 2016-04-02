@@ -1,6 +1,5 @@
 ﻿import React, { Component } from 'react';
 import {Link} from 'react-router';
-require('bootstrap/dist/css/bootstrap.css');
 var LineChart = require("react-chartjs").Line;
 var PieChart = require("react-chartjs").Pie;
 
