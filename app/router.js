@@ -3,6 +3,7 @@ import { Route, IndexRoute } from 'react-router'
 import { UserAuthWrapper } from 'redux-auth-wrapper'
 import App from 'views/App'
 import ProfileView from 'views/profile/ProfileView'
+import ProfileAdminView from 'views/profileadmin/ProfileAdminView'
 import HomeView from 'views/home/HomeView'
 import SearchView from 'views/search/SearchView'
 import LoginView from 'views/login/loginView'
@@ -36,7 +37,8 @@ const isAuthAdmin = UserAuthWrapper({
 const routes = (
     <Route path="/" component={App}>
         <IndexRoute component={HomeView}/>
-        <Route path="profile" component={isAuthUser(ProfileView)}/>
+        <Route path="profile" component={ProfileView}/>
+        <Route path="profileadmin" component={ProfileAdminView}/>
         <Route path="search" component={SearchView}/>
         <Route path="login" component={LoginView}/>
         <Route path="register" component={RegisterView}/>

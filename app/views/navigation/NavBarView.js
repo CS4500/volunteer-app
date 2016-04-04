@@ -51,6 +51,7 @@ class NavBar extends Component {
                             <Link className={styles.link} to="/">Home</Link>
                             <Link className={styles.link} to="/profile">Profile</Link>
                             <Link className={styles.link} to="/search">Search</Link>
+                            <Link className={styles.link} to="/profileadmin">admintest</Link>
                         </div>
                     </div>
                 </header>
