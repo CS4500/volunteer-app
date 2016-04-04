@@ -8,6 +8,8 @@ import SearchView from 'views/search/SearchView'
 import LoginView from 'views/login/LoginView'
 import RegisterView from 'views/register/RegisterView'
 import ApprovalView from 'views/approval/ApprovalView'
+import External_Profile_View from 'views/organization/External_Profile_View'
+import Internal_Profile_View from 'views/organization/Internal_Profile_View'
 
 // Authentication Wrappers
 // in the future these may need to be nested, and we may want to provide
@@ -41,6 +43,8 @@ const routes = (
         <Route path="login" component={LoginView}/>
         <Route path="register" component={RegisterView}/>
         <Route path="approval" component={ApprovalView}/>
+        <Route path="ExternalOrg" component={External_Profile_View}/>
+        <Route path="InternalOrg" component={isAuthOrg(Internal_Profile_View)}/>
     </Route>
 )
 
