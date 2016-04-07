@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
-import AboutMe from './AboutMe.js';
 import ReactDOM from 'react-dom';
 import { Modal, form, Button, Input } from 'react-bootstrap';
+require('bootstrap/dist/css/bootstrap.css');
 
 class Popup extends Component {
     render() {                   

@@ -7,6 +7,8 @@ import HomeView from 'views/home/HomeView'
 import SearchView from 'views/search/SearchView'
 import LoginView from 'views/login/LoginView'
 import RegisterView from 'views/register/RegisterView'
+import ExternalOrganizationView from 'views/organization/External_Profile_View'
+import InternalOrganizationView from 'views/organization/Internal_Profile_View'
 import ApprovalView from 'views/approval/ApprovalView'
 import EventDetailsView from 'views/eventDetails/EventDetailsView'
 
@@ -43,6 +45,8 @@ const routes = (
         <Route path="register" component={RegisterView}/>
         <Route path="approval" component={ApprovalView}/>
         <Route path="event/:eventId" component={EventDetailsView}/>
+        <Route path="externalOrg" component={ExternalOrganizationView}/>
+        <Route path="internalOrg" component={InternalOrganizationView}/>
     </Route>
 );
 
