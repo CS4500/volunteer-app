@@ -3,8 +3,6 @@ import './divBox.css'
 import {Link} from 'react-router';
 import EventHistory from '../../components/EventDashboard/EventHistory';
 
-import EventCreation from '../../containers/EventCreationContainer';
-
 import UpcomingEvents from '../../components/EventDashboard/UpcomingEvents';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import ProfileChart from '../../components/ProfileChart/ProfileChart';
@@ -22,7 +20,7 @@ class ProfileView extends Component {
                             <h1> Confirmed Events</h1>
                             <UpcomingEvents />
                         </div>
-                        <div id="box2">
+                        <div id="box2">git
                             <h1> Unconfirmed Events </h1>
                             <UpcomingEvents />
                         </div>
@@ -30,7 +28,6 @@ class ProfileView extends Component {
                     <div className='clearfix'></div>
                     <div id="bottom">
                         <h1> Event History </h1>
-                        <EventCreation />
                         <EventHistory />
                     </div>
                 </div>
