@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './divBox.css'
 import {Link} from 'react-router';
-import EventHistory from '../../components/EventDashboard/EventHistory'
-import UpcomingEvents from '../../components/EventDashboard/UpcomingEvents'
+import EventHistory from '../../components/EventDashboard/EventHistory';
+
+import EventCreation from '../../containers/EventCreationContainer';
+
+import UpcomingEvents from '../../components/EventDashboard/UpcomingEvents';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import ProfileChart from '../../components/ProfileChart/ProfileChart';
 import FeaturedEvents from '../../containers/FeaturedEventsContainer';
@@ -27,6 +30,7 @@ class ProfileView extends Component {
                     <div className='clearfix'></div>
                     <div id="bottom">
                         <h1> Event History </h1>
+                        <EventCreation />
                         <EventHistory />
                     </div>
                 </div>

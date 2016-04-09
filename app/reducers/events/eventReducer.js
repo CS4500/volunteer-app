@@ -9,6 +9,7 @@ import {
     RESET_EVENT
     } from '../../actions/events/eventActions'
 
+
 // this is a template, currently returns same state for for each action, will have
 // to specify how each action modifies the app state, will also need to add
 // additional state

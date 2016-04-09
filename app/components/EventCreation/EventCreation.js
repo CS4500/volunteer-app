@@ -2,23 +2,7 @@ import React, { Component } from 'react';
 import { Button, ButtonToolbar, ButtonInput, Input, OverlayTrigger, Popover, Modal} from 'react-bootstrap';
 import DateTimeField from 'react-bootstrap-datetimepicker';
 
-const EventCreation = React.createClass({
-
-    getInitialState() {
-        return { showModal: false };
-    },
-
-    close() {
-        this.setState({ showModal: false });
-    },
-
-    open() {
-        this.setState({ showModal: true });
-    },
-
-    render() {
-
-        return (
+const EventCreation = (props) => (
             <div>
                 <Button bsStyle="primary" bsSize="small" onClick={this.open}>
                     Create Event
@@ -30,7 +14,7 @@ const EventCreation = React.createClass({
                     <Modal.Body>
                         <div>
                             <form>
-                                <Input type="text" label="Event Name" placeholder="Enter name" />
+                                <Input type="text" label="Event Name"  onChange={props.nameChange} placeholder="Enter name" />
                                 <h5> When </h5>
                                 <DateTimeField />
 
@@ -40,10 +24,10 @@ const EventCreation = React.createClass({
                                 <Input type="checkbox" label="Capped?" defaultChecked/>
                                 <Input type="text" label="Capped Amount" placeholder="How many?" />
 
-                                <Input type="text" label="Where" placeholder="Address" />
+                                <Input type="text" label="Where" onChange={props.addressChange} placeholder="Address" />
                                 <Input type="text" label="" placeholder="City" />
                                 <Input type="select" label="" placeholder="State" />
-                                <Input type="text" label="" placeholder="Zip Code" />
+                                <Input type="text" label="" onChange={props.zipcodeChange} placeholder="Zip Code" />
                                 <Input type="select" label="Neighborhood" placeholder="Select Neighborhood" >
                                     <option value="select">select</option>
                                     <option value="other">...</option>
@@ -57,7 +41,7 @@ const EventCreation = React.createClass({
                                     <option value="other">...</option>
                                 </Input>
 
-                                <Input type="select" label="Event Manager" placeholder="Event Manager">
+                                <Input type="select" label="Event Manager" onChange={props.managerChange} placeholder="Event Manager">
                                     <option value="select">select</option>
                                     <option value="other">...</option>
                                 </Input>
@@ -73,8 +57,6 @@ const EventCreation = React.createClass({
                 </Modal>
             </div>
         );
-    }
-});
 
 
 
