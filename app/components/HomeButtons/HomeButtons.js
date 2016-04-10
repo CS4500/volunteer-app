@@ -29,15 +29,13 @@ class HomeButton extends Component {
 	    	<div className={styles.homebutton}>
 		    	<div className={styles.button}>
 		    		<OverlayTrigger trigger="click" onClick={this.onLoginClick.bind(this)} placement="bottom" overlay={<Popover id="login">{this.renderActionSection()}</Popover>}>
-	                    <Button bsStyle="primary">Login</Button>
-                       
+	                    <Button bsStyle="primary">Login</Button>                       
 	                </OverlayTrigger>
 		    	</div>
 		    	<div className={styles.button}>
 		    		<Link className={styles.link} to="/register">
 		    			<Button bsStyle="primary">Sign up</Button>
 		    		</Link>
-		    		
 		    	</div>
 		    </div>
 	    );
