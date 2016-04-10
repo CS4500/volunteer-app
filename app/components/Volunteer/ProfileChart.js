@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import {Link} from 'react-router';
+import {Button} from 'react-bootstrap'
 require('bootstrap/dist/css/bootstrap.css');
 var LineChart = require("react-chartjs").Line;
 var PieChart = require("react-chartjs").Pie;
@@ -138,6 +139,9 @@ class ProfileChart extends Component {
                 <div>
                     <PieChart data={data2} options={options2}/>
                     <LineChart data={data} options={options}/>
+                    <Link to="/hours">
+                        <Button bsStyle="primary">More Details</Button>
+                    </Link>
                 </div>
                
             </div>
