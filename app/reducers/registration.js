@@ -41,7 +41,7 @@ const emptyState =
             education: {value: null, valid: true, error: null},
             address: {value: null, valid: true, error: null},
             city: {value: null, valid: true, error: null},
-            state: {value: null, valid: true, error: null},
+            state: {value: "MA", valid: true, error: null},
             zip: {value: null, valid: true, error: null},
             skills: {value: [], valid: true, error: null},
             interests: {value: [], valid: true, error: null},

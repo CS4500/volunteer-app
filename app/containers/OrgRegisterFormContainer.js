@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { loginRequest } from '../actions/auth'
 import {
     setName,
     setEmail,
@@ -25,14 +26,16 @@ class OrgRegisterFormContainer extends Component {
 
     componentWillUpdate(nextProps, nextState) {
         if (nextProps.success) {
-            nextProps.pushRoute('/profile');
+            nextProps.loginRequest({email: nextProps.user.email.value, passwordhash: nextProps.user.password.value})
+                .then(function(response) {
+                    nextProps.pushRoute('/profile');
+                }.bind(nextProps));
         }
     }
 
     componentWillUnmount() {
         this.props.reset()
     }
-
 
     handleRegister() {
         this.props.saveUser(this.props.user, "organization")
@@ -129,7 +132,8 @@ const mapDispatchToProps = (dispatch) => (
         setCity,
         setState,
         setZip,
-        setMission}, dispatch)
+        setMission,
+        loginRequest}, dispatch)
 );
 
 const mapStateToProps = (state) => (

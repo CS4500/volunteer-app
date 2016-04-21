@@ -1,19 +1,14 @@
-@import '../../styles/colors';
+@import '../../../../styles/colors';
 
 .searchResults {
   width: 100%;
-  margin-top: 20px;
-  height: 600px;
-  overflow: auto;
-  background: $grey-light;
-  border-top: 1px solid $grey-dark;
 
   .col {
     background: rgb(255, 252, 245);
     padding: 0;
     box-shadow: 5px 5px 5px darken($blue-dark-overlay, 6);
     border-radius: 5px;
-    margin-top: 25px;
+    margin-top: 40px;
     @media(min-width:992px) {
       height: 150px;
     }

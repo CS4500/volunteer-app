@@ -20,11 +20,14 @@
 }
 
 
-.profimg {
-  border-radius: 50%;
-  width: 50%;
-  margin: 20px 24%;
-  height: auto;
+.imgWrapper {
+  width: 100%;
+  text-align: center;
+  .profimg {
+    border-radius: 10px;
+    width: auto;
+    height: 100px;
+  }
 }
 
 .name {

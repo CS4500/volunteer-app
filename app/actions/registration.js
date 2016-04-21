@@ -322,25 +322,15 @@ export const saveUser = (userData, userType) => {
         })
     } else {
         let data = buildUserObject(userData, userType);
-        if (data.permissions == "organization") {
-            return ({
-                [CALL_API]: {
-                    types: [SAVE_USER_REQUEST, SAVE_USER_SUCCESS, SAVE_USER_FAILURE],
-                    endpoint: `organization/`,
-                    method: POST,
-                    data: data
-                }
-            })
-        } else {
-            return ({
-                [CALL_API]: {
-                    types: [SAVE_USER_REQUEST, SAVE_USER_SUCCESS, SAVE_USER_FAILURE],
-                    endpoint: `user/`,
-                    method: POST,
-                    data: data
-                }
-            })
-        }
+        return ({
+            [CALL_API]: {
+                types: [SAVE_USER_REQUEST, SAVE_USER_SUCCESS, SAVE_USER_FAILURE],
+                endpoint: `user/`,
+                method: POST,
+                data: data
+            }
+        })
+
 
     }
 };

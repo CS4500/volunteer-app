@@ -66,7 +66,7 @@ const Faq = () => (
                 <p id="o3" className={styles.questionheader}>How can I create events as an organization?</p>
                 <p>When signed in as an organization, view your organization and click the “Create event” button to bring up the event creation window, where you will fill in the necessary details.</p>
                 <p id="o4" className={styles.questionheader}>Can I confirm volunteers who have signed up for the event?</p>
-                <p>Yes!...Can we?</p>
+                <p>Yes!</p>
             </div>
         </div>
 

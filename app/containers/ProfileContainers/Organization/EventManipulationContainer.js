@@ -149,7 +149,7 @@ EventCreationContainer.propTypes = {
 }
 
 const mapDispatchToProps = (dispatch) => (
-    bindActionCreators({ saveEvent, updateEvent, setName, setDate, setAddress, pushRoute, setError, reset, setZipcode, setManager, openModal, closeModal}, dispatch)
+    bindActionCreators({ saveEvent, updateEvent, setName, setMonth, setDay, setYear, setAddress, pushRoute, setError, reset, setZipcode, setManager, openModal, closeModal}, dispatch)
 )
 
 const mapStateToProps = (state) => (

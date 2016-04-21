@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { loginRequest } from '../actions/auth'
 import {
     setEmail,
     setName,
@@ -26,7 +27,11 @@ class UserRegisterFormContainer extends Component {
 
   componentWillUpdate(nextProps, nextState) {
     if (nextProps.success) {
-      nextProps.pushRoute('/profile');
+      nextProps.loginRequest({email: nextProps.user.email.value, passwordhash: nextProps.user.password.value})
+        .then(function(response) {
+          nextProps.pushRoute('/profile');
+        }.bind(nextProps));
+
     }
   }
 
@@ -166,7 +171,8 @@ const mapDispatchToProps = (dispatch) => (
         setSkills,
         setInterests,
         setBio,
-        setContact }, dispatch)
+        setContact,
+        loginRequest }, dispatch)
 );
 
 const mapStateToProps = (state) => (

@@ -13,7 +13,7 @@ class ProfileContainer extends Component {
     render() {
         let content = null;
 
-        if (this.props.permissions == "volunteer") {
+        if (this.props.permissions == "organization") {
             content = <OrgProfileContainer />;
         } else {
             content = <UserProfileContainer />;

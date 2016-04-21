@@ -4,8 +4,8 @@ import { connect } from 'react-redux'
 import {Link} from 'react-router';
 import styles from './userprofilecontainer.scss'
 import AboutMeContainer from './UserAboutMeContainer'
-import UpcomingEvents from '../../../components/ProfileComponents/Volunteer/EventDashboard/UpcomingEvents'
-import EventHistory from '../../../components/ProfileComponents/Volunteer/EventDashboard/EventHistory'
+import UpcomingEventContainer from './UpcomingEventContainer'
+import EventHistoryContainer from './PastEventContainer'
 import FeaturedEventsContainer from '../../FeaturedEventsContainer'
 import ProfileChart from '../../../components/ProfileComponents/Volunteer/ProfileChart'
 import Icon from 'react-fa';
@@ -46,7 +46,7 @@ class UserProfileContainer extends Component {
                         </div>
 
                         <div>
-                          {(this.state.toggle === 'upcoming') ? <UpcomingEvents /> : <EventHistory /> }
+                          {(this.state.toggle === 'upcoming') ? <UpcomingEventContainer /> : <EventHistoryContainer /> }
                         </div>
                     </Col>
 
@@ -55,7 +55,7 @@ class UserProfileContainer extends Component {
                     <Col xs={12} lg={3} className={styles.rightPanel}>
                         <FeaturedEventsContainer />
                         <div className={styles.hours}>
-                          <h3 className={styles.title}> <Icon name="clock-o" size={'1x'} /> Hours</h3>
+                          <h3 className={styles.title}> <Icon name="clock-o"/> Hours</h3>
                           <p><bold>All Time:</bold>{this.props.user.vhours}</p>
                         </div>
                         <ProfileChart className={styles.chart} />

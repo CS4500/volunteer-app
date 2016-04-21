@@ -7,7 +7,9 @@ const AboutMe = (props) => {
 
     return (
         <div className={styles.aboutPanel}>
-            <img className={styles.profimg} src={props.user.image}  alt="user"/>
+            <div className={styles.imgWrapper}>
+                <img className={styles.profimg} src={"/images/avatar.png"}  alt="user"/>
+            </div>
             <h1 className={styles.name}>{props.user.name}</h1>
             <div>
 
