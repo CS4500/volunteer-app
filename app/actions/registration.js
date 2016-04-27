@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  REGISTRATION ACTIONS
+ *  Handles all volunteer and org registration
+ *
+ */
+
 export const SET_NAME = 'SET_NAME';
 export const SET_EMAIL = 'SET_EMAIL';
 export const SET_POC = 'SET_POC';

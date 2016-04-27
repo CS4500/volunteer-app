@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  HOURS ACTIONS
+ *  Handles all hour logging for events
+ *
+ */
+
 //action types
 export const SET_START_TIME = 'SET_START_TIME';
 export const SET_END_TIME = 'SET_END_TIME';

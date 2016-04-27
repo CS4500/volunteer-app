@@ -4,6 +4,7 @@ import { fetchUsers } from '../actions/users'
 import VolunteerApproval from "../components/VolunteerApproval/VolunteerApproval";
 import RequestingAttend from '../components/VolunteerApproval/RequestingAttend';
 
+// Container to wrap the Volunteer Approval component
 class VolunteerApprovalContainer extends Component {
 
    componentDidMount() {

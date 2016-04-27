@@ -4,6 +4,9 @@ import GoogleMap from '../components/GoogleMap/GoogleMap'
 import GoogleMapMessage from '../components/GoogleMap/GoogleMapMessage'
 var geocoder = new google.maps.Geocoder();
 
+// Takes in an address city and state
+// Pulls the lat and long coordinates and displays a google
+// map with a marker on the coordinates
 class GoogleMapContainer extends Component {
 
     constructor(props) {

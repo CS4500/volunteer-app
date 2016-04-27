@@ -23,8 +23,12 @@ import {
 import { push as pushRoute} from 'react-router-redux';
 import UserRegisterForm from '../components/RegisterForm/UserRegisterForm'
 
+// Wrapper for the user register component
 class UserRegisterFormContainer extends Component {
 
+  // Success field will be set on the register action request success
+  // Must also login after successful registration to set the auth.user object in the redux state
+  // Then route to profile once the login request returns
   componentWillUpdate(nextProps, nextState) {
     if (nextProps.success) {
       nextProps.loginRequest({email: nextProps.user.email.value, passwordhash: nextProps.user.password.value})
@@ -123,6 +127,7 @@ class UserRegisterFormContainer extends Component {
     this.props.setContact(e.target.value);
   }
 
+  // Render the component and pass it all of the necessary props
   render() {
       return (
           //Note entire props can be also just be passed as <UserRegisterForm {props}>
@@ -147,12 +152,13 @@ class UserRegisterFormContainer extends Component {
   }
 }
 
+// Define the properties
 UserRegisterFormContainer.propTypes = {
   user: PropTypes.object.isRequired,
   error: PropTypes.string
 };
 
-
+// Maps the actions to this.props
 const mapDispatchToProps = (dispatch) => (
     bindActionCreators({
         saveUser,
@@ -175,6 +181,7 @@ const mapDispatchToProps = (dispatch) => (
         loginRequest }, dispatch)
 );
 
+// Maps the redux state to this.props
 const mapStateToProps = (state) => (
   {
     user: state.registration.user,

@@ -1,4 +1,10 @@
 import { CALL_API, GET, POST } from '../../middleware/api'
+/*
+*  EVENT ACTIONS
+*  Handles all singular event actions
+*  E.x. signing up for an event, or getting data for one event
+*
+ */
 
 //action types
 export const FETCH_EVENT_REQUEST = 'FETCH_EVENT_REQUEST';

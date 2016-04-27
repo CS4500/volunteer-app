@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  ORGANIZATION ACTIONS
+ *  Handles all fetching and saving of organizations
+ *
+ */
+
 //action types
 export const FETCH_ORGS_REQUEST = 'FETCH_ORGS_REQUEST';
 export const FETCH_ORGS_SUCCESS = 'FETCH_ORGS_SUCCESS';

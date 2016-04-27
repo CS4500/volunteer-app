@@ -4,6 +4,8 @@ import UserProfileContainer from './Volunteer/UserProfileContainer'
 import OrgProfileContainer from './Organization/OrgProfileContainer'
 import { connect } from 'react-redux'
 
+// The profile view calls this container
+// Checks the user role (permissions) to determine which profile container to show
 class ProfileContainer extends Component {
 
     componentDidMount() {
