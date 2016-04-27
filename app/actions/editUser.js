@@ -1,5 +1,12 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  EVENT ACTIONS
+ *  Handles all singular event actions
+ *  E.x. signing up for an event, or getting data for one event
+ *  TODO wire these up to work on every possible user field. It currently only works on name, email, phone and bio
+ */
+
 export const UPDATE_NAME = 'UPDATE_NAME';
 export const UPDATE_EMAIL = 'UPDATE_EMAIL';
 export const UPDATE_PHONE = 'UPDATE_PHONE';

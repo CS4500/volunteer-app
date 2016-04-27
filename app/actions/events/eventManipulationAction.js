@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../../middleware/api'
 
+/*
+ *  EVENT MANIPULATION ACTIONS
+ *  Handles event creation and editing
+ *  updateEvent() and saveEvent()
+ */
+
 export const SET_NAME = 'SET_NAME';
 export const SET_ADDRESS= 'SET_ADDRESS';
 export const SET_ZIPCODE = 'SET_ZIPCODE';
@@ -122,7 +128,7 @@ export const updateEvent = (eventData) => {
     }
 };
 
-
+// Check data to see if all required fields are present
 const checkData = (eventData) => {
 
     if (eventData.name) {

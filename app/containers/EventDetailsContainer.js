@@ -5,7 +5,8 @@ import { fetchEvent, signUpForEvent, unsignUpForEvent } from '../actions/events/
 import { push as pushRoute } from 'react-router-redux';
 import EventDetails from '../components/EventDetails/EventDetails'
 
-
+// The event details page. What is seen when a user clicks on an event in the search view
+// Users sign up for events on this page
 class EventDetailsContainer extends Component {
 
     constructor(props) {

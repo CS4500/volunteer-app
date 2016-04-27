@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Footer from '../components/Footer/Footer';
 
+// The website footer
 class FooterContainer extends Component {
 
     render() {

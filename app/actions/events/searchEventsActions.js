@@ -1,5 +1,12 @@
 import { CALL_API, GET, POST } from '../../middleware/api'
 
+/*
+ *  SEARCH EVENT ACTIONS
+ *  Handles all search event actions
+ *  sets search params (category + neighborhood)
+ *
+ */
+
 //action types
 export const FETCH_EVENTS_REQUEST = 'FETCH_EVENTS_REQUEST';
 export const FETCH_EVENTS_SUCCESS = 'FETCH_EVENTS_SUCCESS';

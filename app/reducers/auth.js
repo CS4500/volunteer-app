@@ -17,9 +17,8 @@ import { UPDATE_USER_REQUEST,
     CLEAR_UPDATE_FIELDS,
     REMOVE_UPDATE_ERROR,
     SET_UPDATE_ERROR } from '../actions/editUser'
-// Should the default empty state have a user with
-// all null fields or user: null
-// Better handle login state
+
+// The default/initial empty state
 const emptyState = { user: {
                         email: null,
                         password: null
@@ -34,6 +33,8 @@ const emptyState = { user: {
                     role: null,
                     token: null };
 
+// These get triggered by the actions
+// Merge the updated fields into the current state
 export default (state = emptyState, action) => {
   switch (action.type) {
     case SET_EMAIL:

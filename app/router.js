@@ -30,6 +30,10 @@ const isAuthAdmin = UserAuthWrapper({
   predicate: auth => auth.isAuthenticated & auth.role === 'admin'
 })
 
+// All of these point to views.
+// Wrap component with auth check if a user
+// must be signed in to view a certain page
+// Adding an id in the path makes that id accessible in the view via this.params.<id>
 const routes = (
     <Route path="/" component={App}>
         <IndexRoute component={HomeView}/>

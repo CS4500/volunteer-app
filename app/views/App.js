@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router'
 
+// The parent component
+// All the views get rendered as this.props.children
 class App extends Component {
     render() {
         return (

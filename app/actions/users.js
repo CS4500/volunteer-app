@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  USERS ACTIONS
+ *  fetch users is for admins to get the list of all possible users
+ *
+ */
+
 //action types
 export const FETCH_USERS_REQUEST = 'FETCH_USERS_REQUEST'
 export const FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS'

@@ -12,6 +12,8 @@ import EventSearchForm from '../components/EventSearchForm/EventSearchForm'
 import AdvancedSearch from '../components/AdvancedSearch/AdvancedSearch'
 import EventSearchResults from '../components/EventSearchResults/EventSearchResults'
 
+// Event search container. If it is the home page, route to the search page instead of showing search results
+// TODO Currently not using the advanced search component
 class EventSearchContainer extends Component {
 
     constructor(props) {

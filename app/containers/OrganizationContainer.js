@@ -6,6 +6,8 @@ import { push as pushRoute } from 'react-router-redux';
 import About from '../components/Organization/About'
 import Carousel from '../components/Organization/Carousel'
 
+// Wrapper for the organization component
+// What a volunteer sees when they view an org page
 class OrganizationContainer extends Component {
 
     componentDidMount() {

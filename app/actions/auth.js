@@ -1,5 +1,11 @@
 import { CALL_API, GET, POST } from '../middleware/api'
 
+/*
+ *  USER LOGIN ACTIONS
+ *  Handles user login
+ *
+ */
+
 //action types
 export const LOGIN_REQUEST = 'LOGIN_REQUEST'
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'

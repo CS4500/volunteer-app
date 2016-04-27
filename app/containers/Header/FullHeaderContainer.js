@@ -5,6 +5,7 @@ import FullHeader from '../../components/Header/FullHeader';
 import { bindActionCreators } from 'redux';
 import {push as pushRoute } from 'react-router-redux';
 
+// The wrapper for the header component that is visible on the user profile page
 class FullHeaderContainer extends Component {
     logoutUser() {
         this.props.logout();

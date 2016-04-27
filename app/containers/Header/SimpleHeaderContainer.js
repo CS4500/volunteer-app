@@ -5,6 +5,7 @@ import SimpleHeader from '../../components/Header/SimpleHeader';
 import { bindActionCreators } from 'redux';
 import {push as pushRoute } from 'react-router-redux';
 
+// The header that can be seen on the home page
 class SimpleHeaderContainer extends Component {
     logoutUser() {
         this.props.logout();
