@@ -41,13 +41,13 @@ const Faq = () => (
             <div>
                 <h2>Volunteers</h2>
                 <p id="v1" className={styles.questionheader}>How do I sign up as a volunteer?</p>
-                <p>Navigate to the <a href="/register" target="_blank">sign up</a> page and fill out all the necessary information. Including your location, skills, and interests will help you find more relevant events to volunteer for</p>
+                <p>Navigate to the sign up page and fill out all the necessary information. Including your location, skills, and interests will help you find more relevant events to volunteer for</p>
                 <p id="v2" className={styles.questionheader}>How do I view my profile?</p>
-                <p>Once you sign up and log in <a href="/login" target="_blank">here</a>, the top menu will include a link to your profile.</p>
+                <p>Once you sign up and log in, the top menu will include a link to your profile.</p>
                 <p id="v3" className={styles.questionheader}>How do I edit my profile?</p>
                 <p>On the left-hand side of your profile is an “About me” box. There, click the “Edit Profile” button to change the details!</p>
                 <p id="v4" className={styles.questionheader}>How can I search for and sign up for events?</p>
-                <p>You can search for events both from the <a href="/index" target="_blank"> home page</a> and the <a href="/search" target="_blank">search page</a>. Just choose your preferred category and neighborhood, press the search button, and the results will appear on screen.</p>
+                <p>You can search for events both from the home page and the search page. Just choose your preferred category and neighborhood, press the search button, and the results will appear on screen.</p>
                 <p id="v5" className={styles.questionheader}>How do I view my events?</p>
                 <p>Your profile page has two sections in the middle containing events you’ve completed (past events), and upcoming events that you’ve signed up for.</p>
                 <p id="v6" className={styles.questionheader}>How do I log my hours volunteered?</p>
