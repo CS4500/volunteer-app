@@ -17,22 +17,24 @@ class OrgProfileContainer extends Component {
     render() {
         return (
             <Grid className={styles.wrapper}>
-                <Row>
-                    <Col xs={12} sm={3} className={styles.aboutMe}>
+                <Row className={styles.profileContainer}>
+                    <Col xs={12} sm={3} className={styles.aboutPanel}>
                         <OrgAboutMeContainer />
                     </Col>
                     <Col xs={12} sm={6}>
                         <h2> Hello there, {this.props.user.name} Org</h2>
-                        <div>
+                        <div className={styles.eventToggle}>
                             <div>
-                                <h1> Upcoming Events</h1>
-                                <UpcomingEvents />
+                                <div>
+                                    <h1> Upcoming Events</h1>
+                                    <UpcomingEvents />
+                                </div>
                             </div>
-                        </div>
-                        <div></div>
-                        <div>
-                            <h1> Past Events </h1>
-                            <EventHistory />
+                            <div></div>
+                            <div>
+                                <h1> Past Events </h1>
+                                <EventHistory />
+                            </div>
                         </div>
                     </Col>
                     <Col xs={12} sm={3}>

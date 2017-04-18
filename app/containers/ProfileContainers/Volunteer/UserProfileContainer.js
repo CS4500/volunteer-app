@@ -48,7 +48,6 @@ class UserProfileContainer extends Component {
                         <div>
                           {(this.state.toggle === 'upcoming') ? <UpcomingEventContainer /> : <EventHistoryContainer /> }
                         </div>
-
                     </Col>
 
 

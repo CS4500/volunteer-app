@@ -1,5 +1,92 @@
 @import '../../../styles/colors';
 
+@import '../../../styles/colors';
+
+.profileContainer {
+
+  .aboutPanel {
+    background: $blue-secondary;
+    padding: 40px 3% 0 3%;
+    height: 100%;
+    color: $grey-light;
+    // TODO; don't use min height, inherit with 100%
+    min-height: 1200px;
+  }
+  .eventsPanel  {
+    background: rgba($grey-dark, 0.2);
+    padding-top: 40px;
+    padding: 40px 4% 0 4%;
+    height: 100%;
+    min-height: 1200px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .eventToggle{
+      width: 50%;
+      margin: 0 auto;
+      height: 70px;
+      background-color: $white;
+      margin-bottom: 50px;
+      min-width: 400px;
+      border: 1px solid rgba($grey-dark, 0.5);
+
+      .item {
+        width: 50%;
+        float: left;
+        height: 100%;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+
+      // Don't do this, use classnames to toggle classes
+      .accent {
+        border-bottom: 10px solid $blue-accent;
+        width: 50%;
+        float: left;
+        height: 100%;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+    }
+
+  }
+
+  .rightPanel {
+    height: 100%;
+    min-height: 1200px;
+    padding: 30px 3%;
+    overflow: hidden;
+
+    .hours {
+      margin-bottom: 50px;
+    }
+
+    .title {
+      margin: 40px 0 30px 0;
+    }
+
+    .chart{
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 1.3em;
+      font-weight: 200;
+      margin-left: 30px;
+      bold {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
 .wrapper {
   width: 100%;
   margin: 0;
